@@ -227,13 +227,13 @@ export default function App() {
             <div className="relative">
               <div className="grid grid-cols-2 gap-4">
                 <img
-                  src="../src/assets/bolos1.jpg"
+                  src="/bolos1.jpg"
                   alt="Bolo com problema"
                   className="rounded-2xl shadow-xl aspect-3/4 object-cover"
                   referrerPolicy="no-referrer"
                 />
                 <img
-                  src="../src/assets/bolos2.jpg"
+                  src="/bolos2.jpg"
                   alt="Massa de bolo"
                   className="rounded-2xl shadow-xl aspect-3/4 object-cover mt-8"
                   referrerPolicy="no-referrer"
@@ -270,7 +270,7 @@ export default function App() {
           <div className="max-w-5xl mx-auto flex flex-col md:flex-row gap-12 items-center">
             <div className="md:w-1/2">
               <img
-                src="../src/assets/bea-bolo.webp"
+                src="/bea-bolo.webp"
                 alt="Bea Requena"
                 className="rounded-3xl shadow-2xl overflow-hidden border-8 border-white/5"
                 referrerPolicy="no-referrer"
@@ -449,7 +449,7 @@ export default function App() {
             <div className="md:w-1/3">
               <div className="relative">
                 <img
-                  src="../src/assets/bea-sobre.webp"
+                  src="/bea-sobre.webp"
                   alt="Bea Requena"
                   className="rounded-full aspect-square object-cover border-8 border-white shadow-xl"
                   referrerPolicy="no-referrer"
@@ -497,7 +497,7 @@ export default function App() {
                   >
                     {/* Screen */}
                     <div className="relative w-full h-auto rounded-[2.5rem] overflow-hidden">
-                      <img src="../src/assets/bea-bolo.webp" alt="Ebook Cover" className="w-full h-full object-cover rounded-[2.5rem] border border-white" referrerPolicy="no-referrer" />
+                      <img src="/bea-bolo.webp" alt="Ebook Cover" className="w-full h-full object-cover rounded-[2.5rem] border border-white" referrerPolicy="no-referrer" />
                       <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/30 to-transparent flex flex-col justify-end p-8">
                         <p className="text-xs uppercase tracking-widest font-bold mb-2 text-white/70">Bea Requena</p>
                         <h4 className="text-2xl leading-tight text-white">Manual da Confeiteira Iniciante</h4>
