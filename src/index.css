@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Poppins', sans-serif;
+
+  --color-brand-green: #3d4a35;
+  --color-brand-brown: #7a3e24;
+  --color-brand-cream: #fdfbf9;
+  --color-brand-accent: #00d166;
+}
+
+body {
+  background-color: var(--color-brand-cream);
+  color: #1a1a1a;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
