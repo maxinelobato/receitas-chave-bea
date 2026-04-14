@@ -10,124 +10,8 @@ import {
   Sparkles,
   ShieldCheck,
   TrendingUp,
-  Copy,
-  Check,
 } from 'lucide-react';
-import { motion, AnimatePresence } from 'motion/react';
-import React, { useState } from 'react';
-
-// const CouponBadge = ({
-//   code,
-//   light = false,
-// }: {
-//   code: string;
-//   light?: boolean;
-// }) => {
-//   const [copied, setCopied] = useState(false);
-
-//   const handleCopy = () => {
-//     navigator.clipboard.writeText(code);
-//     setCopied(true);
-
-//     // Play subtle success sound
-//     const audio = new Audio(
-//       'https://assets.mixkit.co/active_storage/sfx/2568/2568-preview.mp3',
-//     );
-//     audio.volume = 0.3;
-//     audio.play().catch(() => {
-//       // Browsers often block auto-playing audio unless triggered by user interaction
-//       // Since this is a click event, it should work, but we catch just in case.
-//     });
-
-//     setTimeout(() => setCopied(false), 2000);
-//   };
-
-//   return (
-//     <div className="flex items-center gap-3">
-//       <motion.div
-//         onClick={handleCopy}
-//         initial={{ opacity: 0, scale: 0.9 }}
-//         animate={{
-//           opacity: 1,
-//           scale: [1, 1.02, 1],
-//           borderColor: light
-//             ? [
-//                 'rgba(255,255,255,0.2)',
-//                 'rgba(255,255,255,0.5)',
-//                 'rgba(255,255,255,0.2)',
-//               ]
-//             : [
-//                 'rgba(61,74,53,0.2)',
-//                 'rgba(61,74,53,0.5)',
-//                 'rgba(61,74,53,0.2)',
-//               ],
-//         }}
-//         whileHover={{ scale: 1.05 }}
-//         whileTap={{ scale: 0.95 }}
-//         transition={{
-//           opacity: { duration: 0.5 },
-//           scale: { duration: 3, repeat: Infinity, ease: 'easeInOut' },
-//           borderColor: { duration: 3, repeat: Infinity, ease: 'easeInOut' },
-//         }}
-//         className={`px-4 py-2 rounded-full border flex items-center gap-3 group cursor-pointer transition-all relative overflow-hidden ${
-//           light
-//             ? 'bg-white/10 hover:bg-white/20 backdrop-blur-sm'
-//             : 'bg-brand-green/10 hover:bg-brand-green/20'
-//         }`}
-//       >
-//         <div className="flex flex-col items-start">
-//           <span
-//             className={`text-[10px] uppercase tracking-widest font-bold ${light ? 'opacity-60' : 'text-neutral-500'}`}
-//           >
-//             Cupom:
-//           </span>
-//           <span
-//             className={`text-lg font-mono font-bold text-brand-accent tracking-widest`}
-//           >
-//             {code}
-//           </span>
-//         </div>
-
-//         <div className="w-8 h-8 rounded-lg bg-brand-green/60 flex items-center justify-center text-brand-accent">
-//           <AnimatePresence mode="wait">
-//             {copied ? (
-//               <motion.div
-//                 key="check"
-//                 initial={{ scale: 0, rotate: -45 }}
-//                 animate={{ scale: 1, rotate: 0 }}
-//                 exit={{ scale: 0, rotate: 45 }}
-//               >
-//                 <Check className="w-4 h-4" />
-//               </motion.div>
-//             ) : (
-//               <motion.div
-//                 key="copy"
-//                 initial={{ scale: 0 }}
-//                 animate={{ scale: 1 }}
-//                 exit={{ scale: 0 }}
-//               >
-//                 <Copy className="w-4 h-4" />
-//               </motion.div>
-//             )}
-//           </AnimatePresence>
-//         </div>
-
-//         <AnimatePresence>
-//           {copied && (
-//             <motion.div
-//               initial={{ opacity: 0, y: 10 }}
-//               animate={{ opacity: 1, y: 0 }}
-//               exit={{ opacity: 0, y: -10 }}
-//               className="absolute inset-0 bg-brand-green flex items-center justify-center text-white font-bold text-xs uppercase tracking-widest"
-//             >
-//               Copiado!
-//             </motion.div>
-//           )}
-//         </AnimatePresence>
-//       </motion.div>
-//     </div>
-//   );
-// };
+import { motion } from 'motion/react';
 
 const Button = ({
   children,
@@ -235,12 +119,6 @@ const CurveDivider = ({
 );
 
 export default function App() {
-  const couponCode = 'GUIA2026';
-
-  const scrollToOffer = () => {
-    document.getElementById('offer')?.scrollIntoView({ behavior: 'smooth' });
-  };
-
   return (
     <div className="min-h-screen font-sans selection:bg-brand-accent/30">
       {/* Hero Section */}
